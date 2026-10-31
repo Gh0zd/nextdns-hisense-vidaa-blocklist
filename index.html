@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Lista de dominios Hisense / VIDAA para bloquear en NextDNS: telemetría, publicidad y rastreo.">
+  <meta name="theme-color" content="#0a0908">
+  <title>Dominios para NextDNS · Hisense / VIDAA</title>
+  <script>try{if(localStorage.getItem("nextdns_theme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M10 12h4v3h-4zM10.5 12v-1a1.5 1.5 0 013 0v1"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M3 12a9 9 0 109-9 9 9 0 00-6.4 2.7L3 8M3 3v5h5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a1 1 0 01-1-1V4a1 1 0 011-1h10a1 1 0 011 1v1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3l10 18H2zM12 10v5M12 18v.01"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></symbol>
+    <symbol id="i-tv" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="13" rx="2"/><path d="M8 21h8"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-shieldfill" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/></symbol>
+  </svg>
+
+  <a class="skip" href="#list" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top"><span class="brand-icon"><svg class="i"><use href="#i-shield"/></svg></span><span class="fd">NextDNS · Hisense</span></a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#list" data-i18n="nav_list">Dominios</a>
+        <a href="#how" data-i18n="nav_how">Cómo usarlo</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="seg" role="group" aria-label="Idioma">
+          <button type="button" data-lang="es" class="on">ES</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <button class="icon-btn" id="theme" type="button" title="Tema"><svg class="i"><use href="#i-sun"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-text">
+        <div class="badge rise" style="--d:0ms">
+          <span class="badge-ic"><svg class="i"><use href="#i-shield"/></svg></span>
+          <b id="st-total">0</b><span data-i18n="badge">dominios para bloquear</span>
+        </div>
+        <h1>
+          <span class="ln"><span data-i18n="h1a">Bloquea.</span></span>
+          <span class="ln"><span data-i18n="h1b">Copia.</span></span>
+          <span class="ln hl"><span data-i18n="h1c">Listo.</span></span>
+        </h1>
+        <p class="lead rise" style="--d:520ms" data-i18n="lead">Lista de dominios de telemetría, publicidad y rastreo de tu televisor. Cópialos y pégalos en NextDNS → Denylist.</p>
+        <div class="cta rise" style="--d:640ms">
+          <a class="btn solid" href="#list" data-i18n="btn1">Ver dominios</a>
+          <a class="btn ghost" href="#how" data-i18n="btn2">Cómo usarlo</a>
+        </div>
+        <p class="meta rise" style="--d:760ms"><b id="st-cats">0</b> <span data-i18n="st_cats">categorías</span> · <b id="st-risk">0</b> <span data-i18n="st_risk">con aviso</span> · Hisense · VIDAA</p>
+      </div>
+
+      <div class="bug-wrap rise" style="--d:300ms">
+        <div class="stage">
+          <span class="chipfly c1">rpt-ads.vidaahub.com</span>
+          <span class="chipfly c2">unified-ter.hismarttv.com</span>
+          <span class="chipfly c3">ter-jrnl.vidaahub.com</span>
+          <svg class="ringsvg" viewBox="0 0 240 240" aria-hidden="true"><circle cx="120" cy="120" r="116"/></svg>
+          <svg class="bug" id="bug" viewBox="0 0 200 200" role="img" aria-label="Bicho">
+            <ellipse class="shadow" cx="100" cy="186" rx="50" ry="7"/>
+            <g class="legs">
+              <path d="M58 120L30 108L22 128"/><path d="M54 138L26 142L22 164"/><path d="M66 154L44 172L46 184"/>
+              <path d="M142 120L170 108L178 128"/><path d="M146 138L174 142L178 164"/><path d="M134 154L156 172L154 184"/>
+            </g>
+            <g class="ant antL"><path d="M88 54Q76 24 56 18"/><circle cx="56" cy="18" r="5"/></g>
+            <g class="ant antR"><path d="M112 54Q124 24 144 18"/><circle cx="144" cy="18" r="5"/></g>
+            <ellipse class="shell" cx="100" cy="120" rx="58" ry="52"/>
+            <path class="seam" d="M100 76V172"/>
+            <circle class="spot" cx="72" cy="116" r="9"/><circle class="spot" cx="74" cy="146" r="7"/>
+            <circle class="spot" cx="128" cy="112" r="8"/><circle class="spot" cx="126" cy="144" r="10"/>
+            <ellipse class="head" cx="100" cy="76" rx="34" ry="27"/>
+            <g class="eye"><ellipse cx="87" cy="73" rx="9" ry="10" fill="#fff"/><circle cx="89" cy="75" r="4.5" fill="#111"/></g>
+            <g class="eye"><ellipse cx="113" cy="73" rx="9" ry="10" fill="#fff"/><circle cx="111" cy="75" r="4.5" fill="#111"/></g>
+            <path class="smile" d="M90 90Q100 98 110 90"/>
+          </svg>
+        </div>
+        <p class="demo-note" data-i18n="demo">Es el bicho de la telemetría. Tócalo</p>
+      </div>
+    </section>
+
+    <section class="wrap layout" id="lista">
+      <div class="sheet-bg" id="sheet-bg"></div>
+      <aside class="side" id="side" aria-label="Categorías">
+        <div class="side-head"><b data-i18n="cats">Categorías</b><button class="icon-btn side-close" id="cat-close" type="button" aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button></div>
+        <nav class="cat-nav" id="cat-nav"></nav>
+      </aside>
+
+      <div class="main-col">
+        <div class="toolbar" id="toolbar">
+          <div class="toolbar-row">
+            <div class="search-wrap">
+              <svg class="i search-icon" aria-hidden="true"><use href="#i-search"/></svg>
+              <input id="q" type="search" data-i18n-ph="search" placeholder="Buscar dominio o descripción…" aria-label="Buscar" autocomplete="off">
+            </div>
+            <button class="icon-btn" id="rs" type="button" title="Reset"><svg class="i"><use href="#i-reset"/></svg></button>
+          </div>
+          <div class="progress-box">
+            <div class="progress-top"><span data-i18n="progress">Progreso</span><strong id="cnt">0 / 0</strong></div>
+            <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+          </div>
+          <div class="filters">
+            <button type="button" class="chip catbtn" id="cat-toggle"><svg class="i"><use href="#i-list"/></svg> <span data-i18n="cats">Categorías</span></button>
+            <button type="button" class="chip on" data-filter="all" data-i18n="f_all">Todos</button>
+            <button type="button" class="chip" data-filter="pending" data-i18n="f_pending">Pendientes</button>
+            <button type="button" class="chip" data-filter="done" data-i18n="f_done">Copiados</button>
+            <button type="button" class="chip" data-filter="risk" data-i18n="f_risk">Con aviso</button>
+          </div>
+        </div>
+        <div id="list"></div>
+      </div>
+    </section>
+
+    <section class="wrap how" id="how">
+      <h2 class="fd reveal" data-i18n="how_t">Cómo usarlo</h2>
+      <ol class="steps">
+        <li class="reveal" style="--d:0ms"><span>1</span><p data-i18n="s1">Abre NextDNS → tu configuración → <strong>Denylist</strong>.</p></li>
+        <li class="reveal" style="--d:80ms"><span>2</span><p data-i18n="s2">Copia un dominio con su botón <strong>Copiar</strong>.</p></li>
+        <li class="reveal" style="--d:160ms"><span>3</span><p data-i18n="s3">Pégalo y pulsa <strong>Agregar</strong>. Repite con cada dominio; los subdominios también se bloquean.</p></li>
+        <li class="reveal" style="--d:240ms"><span>4</span><p data-i18n="s4">Los marcados en naranja pueden afectar alguna función del televisor.</p></li>
+      </ol>
+    </section>
+  </main>
+
+
+  <script src="js/domains.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
