@@ -1,5 +1,8 @@
-<div align="center">
 
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Vidaa-Blocklist&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient"/>
+  
 # Dominios Hisense / VIDAA para NextDNS
 
 Lista curada de dominios de telemetría, publicidad y rastreo de Hisense/VIDAA, listos para bloquear con [NextDNS](https://nextdns.io).<br>
